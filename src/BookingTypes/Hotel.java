@@ -2,6 +2,8 @@ package BookingTypes;
 
 import Model.Booking;
 
+import java.util.List;
+
 public class Hotel extends Booking {
     private int ID;
     private String Name;
@@ -24,4 +26,12 @@ public class Hotel extends Booking {
     public void setLocation(String location) {Location = location;}
     public String getRoomTypes() {return RoomTypes;}
     public void setRoomTypes(String roomTypes) {RoomTypes = roomTypes;}
+
+    // Added recommendation logic
+    public void recommendEvents(List<String> events) {
+        System.out.println("Recommended events for location " + Location + ":");
+        for (String event : events) {
+            System.out.println("- " + event);
+        }
+    }
 }

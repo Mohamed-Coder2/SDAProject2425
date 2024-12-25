@@ -13,7 +13,7 @@ public class EmailNotification extends Notification {
 
     @Override
     public void send() {
-        System.out.println("Subject: " + Subject + "Body: " + Body);
+        System.out.println("Subject: " + Subject + " Body: " + Body);
     }
     public String getSubject() {
         return Subject;
